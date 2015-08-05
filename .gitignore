@@ -1,0 +1,67 @@
+#project related files
+.DS_Store
+Referenced Packages
+.settings
+.project
+.externalToolBuilders/
+salesforce.schema
+build/node_modules/
+build/tmp/
+npm-debug.log
+
+#ignore credential files
+sfdc-build.properties
+credentials.json
+credentials-validation.json
+
+#unfiled emails
+src/email/unfiled$public
+
+#default communities available in dev org
+src/communities/Internal Community.community
+
+#default home layouts for dev orgs
+src/homePageLayouts/DE Default.homePageLayout
+
+#standard roles from dev org
+src/roles/CEO.role
+src/roles/CFO.role
+src/roles/COO.role
+src/roles/ChannelSalesTeam.role
+src/roles/CustomerSupportInternational.role
+src/roles/CustomerSupportNorthAmerica.role
+src/roles/DirectorChannelSales.role
+src/roles/DirectorDirectSales.role
+src/roles/EasternSalesTeam.role
+src/roles/InstallationRepairServices.role
+src/roles/MarketingTeam.role
+src/roles/SVPCustomerServiceSupport.role
+src/roles/SVPHumanResources.role
+src/roles/SVPSalesMarketing.role
+src/roles/VPInternationalSales.role
+src/roles/VPMarketing.role
+src/roles/VPNorthAmericanSales.role
+src/roles/WesternSalesTeam.role
+
+#standard assignment rules
+src/assignmentRules/Case.assignmentRules
+src/assignmentRules/Lead.assignmentRules
+
+#standard sharing rules
+src/opportunitySharingRules/Opportunity.sharingRules
+src/leadSharingRules/Lead.sharingRules
+src/accountSharingRules/Account.sharingRules
+src/campaignSharingRules/Campaign.sharingRules
+src/caseSharingRules/Case.sharingRules
+src/contactSharingRules/Contact.sharingRules
+
+#settings
+src/settings/Case.settings
+src/settings/ChatterAnswers.settings
+src/settings/Company.settings
+src/settings/Contract.settings
+src/settings/Entitlement.settings
+src/settings/Knowledge.settings
+src/settings/Mobile.settings
+src/settings/Security.settings
+#src/settings/Ideas.settings

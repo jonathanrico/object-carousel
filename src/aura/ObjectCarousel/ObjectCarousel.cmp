@@ -1,0 +1,39 @@
+<aura:component controller="ObjectCarouselCtrl" implements="flexipage:availableForAllPageTypes">
+
+    <aura:attribute name="records" type="SObject[]"/>
+    <aura:attribute name="title" type="String" default="Object Carousel" />
+    <aura:attribute name="currentRecord" type="SObject" />
+    <aura:attribute name="autoplay" type="Boolean" default="false"/>
+    <aura:attribute name="timerId" type="String" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <div class="objects-container">
+
+        <div class="objects-header">
+            <div class="objects-header-body">
+                <h4>{!v.title}</h4>
+            </div>
+        </div>
+
+        <div class="objects-container">
+            <ui:outputURL value="#" label="{!v.currentRecord.Name}" click="{!c.goToRecord}" class="object-title"/>
+            <div class="object-field">
+              Phone : {!v.currentRecord.Phone}
+            </div>
+            <div class="object-field">
+              Industry : {!v.currentRecord.Industry}
+            </div>
+            <div class="object-field">
+              Type : {!v.currentRecord.Type}
+            </div>
+        </div>
+
+        <div class="controls">
+            <ui:outputURL value="#" label="&lt;&lt;" click="{!c.previousRecord}" class="prev"/>
+            <ui:outputURL value="#" label="&gt;&gt;" click="{!c.nextRecord}" class="next"/>
+        </div>
+
+    </div>
+
+</aura:component>
