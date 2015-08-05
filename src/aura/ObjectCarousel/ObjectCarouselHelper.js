@@ -20,7 +20,6 @@
 
     moveToNextRecord : function(component){
         var records = component.get('v.records');
-        console.log(records);
         var currentIndex = component.get('v.currentRecordIndex');
         if(currentIndex >= records.length-1){
             currentIndex = 0;
