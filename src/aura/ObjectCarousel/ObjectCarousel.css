@@ -4,6 +4,7 @@
     padding: 10px;
     border: 0;
     background-color:#fff;
+    min-height:500px;
 }
 
 .THIS .objects-header{
@@ -54,7 +55,7 @@
 
 .THIS .controls {
   position: relative;
-  top: 0;
+  top: 100px;
   height:60px;
   width: 100%;
   max-width:460px;
@@ -78,9 +79,33 @@
 
 .THIS .object-title{
   padding:20px 0;
-  font-size:150%;
+  font-size:120%;
 }
 
 .THIS .object-field{
-  padding:10px 0;
+  padding:20px 0 0 0;
+}
+
+.THIS .object-container-header{
+  text-align:center;
+  height:250px;
+  width:100%;
+  background-size: cover;
+  border-radius:10px;
+}
+
+.THIS .object-container-content{
+  height:100px;
+}
+
+.THIS .object-specialty-image{
+  padding: 103px 0 0 0;
+}
+
+.THIS .object-specialty-image img{
+  height:40px;
+  width:40px;
+  background-color:#fff;
+  padding:5px;
+  border-radius:20px;
 }

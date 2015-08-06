@@ -7,7 +7,12 @@ public with sharing class ObjectCarouselCtrl{
                     ,Type
                     ,Industry
                     ,Phone
-                    from Account limit 10];
+                    ,Account_image_url__c
+                    ,Vendor_Specialty1__c
+                    from Account
+                    where RecordType.DeveloperName = 'Vendor'
+                    order by CreatedDate desc
+                    limit 10];
     }
 
 }
