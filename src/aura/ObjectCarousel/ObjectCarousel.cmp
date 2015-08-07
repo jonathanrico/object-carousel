@@ -12,16 +12,13 @@
 
         <div class="objects-header">
             <div class="objects-header-body">
-                <h4>{!v.title}</h4>
+                <h3>{!v.title}</h3>
             </div>
         </div>
 
         <div class="objects-container">
 
             <div class="object-container-header" style="{!'background-image: url('+v.currentRecord.Account_image_url__c+');'}">
-              <div class="object-specialty-image">
-                <aura:unescapedHtml value="{!v.currentRecord.Vendor_Specialty1__c}"/>
-              </div>
             </div>
 
             <div class="object-container-content">
@@ -32,6 +29,11 @@
               <div class="object-field">
                 <a href="{!'sms:'+v.currentRecord.Phone}">{!v.currentRecord.Phone}</a>
               </div>
+
+              <div class="object-specialty-image">
+                <aura:unescapedHtml value="{!v.currentRecord.Vendor_Specialty1__c}"/>
+              </div>
+
             </div>
 
         </div>
