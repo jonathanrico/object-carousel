@@ -1,4 +1,4 @@
-<design:component label="Object Carousel">
-    <design:attribute name="title" label="Carousel Title" description="Title you want to display for this Object Carousel"/>
+<design:component label="Approved Vendors">
+    <design:attribute name="title" label="Approved Vendors" description="Title you want to display for this Object Carousel"/>
     <design:attribute name="autoplay" label="Autoplay Carousel" description="Enable this setting to move to the next record automatically every 5 seconds"/>
 </design:component>
